@@ -1,0 +1,632 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+  html body {
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+
+section {
+  flex: 1;
+  background: gold;
+  width: 100%; }
+
+footer {
+  height: 500px;
+  width: 100%; }
+
+.header-on {
+  font-size: 12px;
+  font-family: "微软雅黑";
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  background: #81d8d0;
+  height: 47px;
+  line-height: 47px; }
+  .header-on span {
+    margin: 0 auto; }
+
+.header-one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  margin-bottom: 24px; }
+
+.lef {
+  width: 128px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+  color: #515151; }
+
+.mid {
+  color: #231f20; }
+
+.rig {
+  width: 184px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+  color: #3b3b3b; }
+
+.wode {
+  margin-left: 11px; }
+
+li {
+  list-style: none; }
+
+.header-two {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center; }
+  .header-two .nav {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    z-index: 120; }
+    .header-two .nav li {
+      padding: 0 25px;
+      border-bottom: 2px #81d8d0 solid; }
+
+h3 {
+  font-size: 13px;
+  color: #000;
+  font-weight: 600px; }
+
+.sub-nav__inner {
+  width: 900px;
+  height: 900px;
+  background-color: aquamarine; }
+
+.h_box {
+  width: 100%;
+  position: absolute;
+  height: 560px;
+  background: brown;
+  display: none;
+  padding: 30px 0;
+  top: 130px;
+  left: 0;
+  z-index: 10; }
+  .h_box div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 444px;
+    background: red; }
+    .h_box div:nth-child(2) {
+      background: palevioletred; }
+    .h_box div:nth-child(3) {
+      background: #28ff9b; }
+    .h_box div:nth-child(4) {
+      background: #e94a64; }
+    .h_box div:nth-child(5) {
+      background: slateblue; }
+    .h_box div:nth-child(6) {
+      background: seagreen; }
+    .h_box div:nth-child(7) {
+      background: palegreen; }
+
+.h_boxs ul {
+  float: left;
+  padding: 0 85px; }
+  .h_boxs ul li {
+    padding: 10px 0; }
+
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0; }
+
+/* 取消划线 */
+a {
+  text-decoration: none;
+  color: #333; }
+
+/* 取消列表符号 */
+ul,
+li,
+ol {
+  list-style: none; }
+
+/* 取消加粗 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: normal; }
+
+/* 取消倾斜 */
+em,
+i {
+  font-style: normal; }
+
+/* 解决图片3px */
+img {
+  display: block; }
+
+body {
+  font-family: '微软雅黑';
+  font-size: 12px; }
+
+input,
+a {
+  outline: none; }
+
+/* 左浮动 */
+.fl {
+  float: left; }
+
+/* 右浮动 */
+.fr {
+  float: right; }
+
+/* 解决高度塌陷 */
+.clean:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  /* 内容裁剪掉 */
+  visibility: hidden;
+  /* 当前伪元素隐藏 */ }
+
+/* 兼容ie低版本高度塌陷问题 */
+.clean {
+  zoom: 1; }
+
+.topwrap {
+  background: rgba(0, 0, 0, 0.05);
+  height: 48px; }
+
+.topwrap .top {
+  width: 1200px;
+  margin: 0 auto; }
+
+.topwrap .top .logo {
+  height: 48px; }
+
+.topwrap .top .logo img {
+  padding: 12px 0;
+  vertical-align: middle;
+  height: 24px; }
+
+.mwrap {
+  background: #fff;
+  min-height: 700px;
+  height: calc(100% - 155px); }
+
+.mwrap .middle {
+  padding: 60px 260px 38px;
+  text-align: center; }
+
+.mwrap .middle h1 {
+  font-size: 32px;
+  color: #191919; }
+
+.mwrap .middle p {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #191919; }
+
+.mwrap .middle p a {
+  color: #007dff;
+  font-size: 18px; }
+
+.mwrap .middle .in {
+  padding: 60px 260px 38px;
+  background: #fff; }
+
+.cook {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #767676;
+  font-size: 31px; }
+
+.in .cook p {
+  margin-right: 390px;
+  font-size: 14px; }
+
+.cook1 {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #767676;
+  font-size: 31px;
+  margin: 25px 0; }
+
+.in .cook1 p {
+  margin-right: 390px;
+  font-size: 14px; }
+
+.cook2 {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #767676;
+  font-size: 31px; }
+
+.in .cook2 p {
+  margin-right: 390px;
+  font-size: 14px; }
+
+.mwrap .middle .in .in1 {
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05); }
+
+.mwrap .middle .in .in1 .left1 {
+  line-height: 48px;
+  float: left; }
+
+.mwrap .middle .in .in1 .left1 span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #191919; }
+
+.mwrap .middle .in .in1 .right1 {
+  width: 64px;
+  position: relative;
+  float: right; }
+
+.mwrap .middle .in .in1 .right1 p {
+  padding-top: 5px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  vertical-align: middle;
+  max-width: 152px;
+  color: #191919;
+  padding-right: 30px; }
+
+.mwrap .middle .in .in1 .right1 .xb {
+  position: absolute;
+  left: 38px;
+  top: 24px;
+  width: 12px;
+  height: 7px;
+  vertical-align: middle;
+  background: url("https://hnid-drcn.cloud.hihonor.com/CAS/up/idmw_rss_68/js/mobile_rss/vuebuild/img/ic_hint_dropdown_setgray.svg") no-repeat;
+  background-position: 50%;
+  background-size: contain; }
+
+.mwrap .middle .in .in2 {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05); }
+
+.mwrap .middle .in .in2 .left2 {
+  position: relative;
+  float: left; }
+
+.mwrap .middle .in .in2 .left2 p {
+  padding-top: 5px;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  vertical-align: middle;
+  max-width: 152px;
+  color: #191919;
+  padding-right: 30px; }
+
+.mwrap .middle .in .in2 .left2 .xb {
+  position: absolute;
+  left: 80px;
+  top: 24px;
+  width: 12px;
+  height: 7px;
+  vertical-align: middle;
+  background: url("https://hnid-drcn.cloud.hihonor.com/CAS/up/idmw_rss_68/js/mobile_rss/vuebuild/img/ic_hint_dropdown_setgray.svg") no-repeat;
+  background-position: 50%;
+  background-size: contain; }
+
+.mwrap .middle .in .in2 .right2 input {
+  line-height: 48px;
+  border: 0px;
+  background: rgba(0, 0, 0, 0.05);
+  float: left;
+  font-size: 14px;
+  height: 48px; }
+
+.mwrap .middle .in .in3 {
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px; }
+
+.mwrap .middle .in .in3 .left3 {
+  float: left; }
+
+.mwrap .middle .in .in3 .left3 input {
+  width: 300px;
+  line-height: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  font-size: 16px; }
+
+.mwrap .middle .in .in3 .right3 {
+  float: right; }
+
+.mwrap .middle .in .in3 .right3 img {
+  height: 48px;
+  line-height: 48px; }
+
+.mwrap .middle .in .in4 {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px; }
+
+.mwrap .middle .in .in4 .left4 {
+  float: left; }
+
+.mwrap .middle .in .in4 .left4 input {
+  width: 350px;
+  line-height: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  font-size: 16px; }
+
+.mwrap .middle .in .in4 .right4 {
+  float: right; }
+
+.mwrap .middle .in .in4 .right4 input {
+  background: rgba(0, 0, 0, 0.05);
+  height: 48px;
+  line-height: 48px;
+  border: 0px;
+  display: inline-block;
+  color: #007dff;
+  font-size: 14px; }
+
+.mwrap .middle .in .in5 {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  position: relative; }
+
+.mwrap .middle .in .in5 .left5 {
+  float: left; }
+
+.mwrap .middle .in .in5 .left5 input {
+  width: 440px;
+  line-height: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  font-size: 16px; }
+
+.mwrap .middle .in .in5 .right5 {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  float: right;
+  background: url("https://hnid-drcn.cloud.hihonor.com/CAS/up/idmw_rss_68/js/mobile_rss/vuebuild/img/password_eyeoff_disable.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transform: translateY(-50%); }
+
+.mwrap .middle .in .in6 {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  position: relative; }
+
+.mwrap .middle .in .in6 .left6 {
+  float: left; }
+
+.mwrap .middle .in .in6 .left6 input {
+  width: 440px;
+  line-height: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  font-size: 16px; }
+
+.mwrap .middle .in .in6 .right6 {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  float: right;
+  background: url("https://hnid-drcn.cloud.hihonor.com/CAS/up/idmw_rss_68/js/mobile_rss/vuebuild/img/password_eyeoff_disable.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transform: translateY(-50%); }
+
+.mwrap .middle .in .in7 {
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.05); }
+
+.mwrap .middle .in .in7 .left7 {
+  float: left; }
+
+.mwrap .middle .in .in7 .left7 span {
+  line-height: 48px;
+  height: 48px;
+  border: 0px;
+  font-size: 16px;
+  color: #191919; }
+
+.mwrap .middle .in .in7 .right7 input {
+  background: rgba(0, 0, 0, 0.05);
+  border: 0px;
+  line-height: 48px;
+  color: #191919; }
+
+.mwrap .middle .in .in8 {
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 440px;
+  height: 48px;
+  background: #fff;
+  margin-top: 50px; }
+
+.mwrap .middle .in .in8 button {
+  opacity: 0.38 !important;
+  background: #007dff;
+  border-radius: 8px;
+  border: 0px;
+  width: 276px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 16px;
+  display: inline-block;
+  height: 48px;
+  color: #fff;
+  text-transform: uppercase; }
+
+.lines_warp {
+  width: 100%;
+  margin-top: 330px; }
+
+.lines_xin {
+  width: 1200px;
+  height: 65px;
+  background-color: pink;
+  margin: 0 auto;
+  margin-top: 13px;
+  overflow: hidden; }
+  .lines_xin p {
+    width: 100%;
+    height: 2px;
+    background: #81d8d0;
+    margin-top: 10px; }
+  .lines_xin h5 {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    line-height: 30px; }
+  .lines_xin li {
+    width: 100%;
+    height: 10px;
+    background: #81d8d0; }
+
+.foot_wrap {
+  width: 100%; }
+
+.foot_xin {
+  width: 1200px;
+  height: 360px;
+  margin: 0 auto; }
+
+.foot_a {
+  width: 90px;
+  height: 225px;
+  margin-top: 30px;
+  float: left;
+  margin-left: 41px;
+  margin-right: 140px; }
+  .foot_a p {
+    display: flex;
+    justify-content: center; }
+  .foot_a h5 {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center; }
+
+.foot_b {
+  width: 300px;
+  height: 340px;
+  float: right; }
+  .foot_b p {
+    padding: 30px 0; }
+  .foot_b span {
+    width: 300px;
+    color: #76768b;
+    border-bottom: solid 1px #000000;
+    display: block;
+    margin-top: 45px; }
+  .foot_b .foot_c {
+    width: 135px;
+    height: 10px;
+    margin-top: 22px;
+    color: #000000; }
+    .foot_b .foot_c a {
+      text-decoration: none;
+      color: #000000;
+      display: flex;
+      justify-content: center;
+      border: #000000 solid 2px; }
+
+.foot_d {
+  width: 150px;
+  height: 20px;
+  margin-top: 40px; }
+
+.foot_e {
+  padding: 5px 0; }

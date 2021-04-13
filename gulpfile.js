@@ -38,7 +38,7 @@ gulp.task("scss", done => {
 })
 // copy js文件
 gulp.task("cjs", done => {
-    gulp.src("./js/*.js").pipe(gulp.dest("dist/js")).pipe(connect.reload());
+    gulp.src("./src/js/*.js").pipe(gulp.dest("dist/js")).pipe(connect.reload());
     done();
 })
 // copy bootstrap框架
@@ -66,6 +66,7 @@ gulp.task("watch", done => {
     gulp.watch("./src/index.html", gulp.series('indexhtml'));
     gulp.watch("./src/js/*.js", gulp.series('cjs'));
     gulp.watch("./src/sass/*.scss", gulp.series('scss'));
+    gulp.watch("./src/images/*", gulp.series('cimg'));
     done();
 })
 gulp.task("tasks", gulp.parallel('cimg', 'cjs', 'bootstrap', 'scss', 'indexhtml', 'copyhtml'));
